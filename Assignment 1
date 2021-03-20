@@ -1,0 +1,59 @@
+//Kulbir Kaur
+//201905831
+//20-03-2021
+//Class IN2203 Section Number-2
+//Assignment 1: The Gambling Game
+
+Import  java.util
+
+Public class MainApplication{
+Public static void main(String args[]){
+	Casino c = new Casino();
+	c.OrganizeNewGame();
+}
+}
+Class Casino{
+Player p1 = new Player();
+Game g1 = new Game();
+String userAnswer;
+Scanner sc = new  Scanner(system.in);
+Public void OrganizeNewGame(){
+System.out.println(“Welcome to our casino: Would you like to play a game? (y/n)”);
+userAnswer.sc.nextLine();
+
+if (userAnswer.equals(“y”)){
+	System.out.println(“lets get started”);
+	G1.PlayGame();
+}
+Else{
+System.out.println(“Good Bye!”);
+}
+
+}
+
+Class Game{
+	Random rand = new Random ();
+	Private int ComputerGuess = -1;
+	
+Public void PlayGame{
+System.out.println(“Guess a number from 1 to 100”);
+System.out.println(“And I will guess a game”);
+System.out.println(“If your guess is within 20 of my guess. Then you will win.Else I will win”);
+ComputerGuess = ComputerGuess();
+System.out.println(“ComputerGuess is”+  ComputerGuess);
+
+Public int ComputerGuess(){
+Int programGuess = rand.nextInt(100);
+Return ProgramGuess;
+}
+}
+}
+
+Class Player{
+Array plyer =  array[];
+If(plyer == plyer){
+System.out.println(“you win”);
+
+}
+}
+}
